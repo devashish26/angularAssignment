@@ -1,0 +1,15 @@
+<div class="d-flex align-items-center justify-content-center vh-100">
+    <div class="loginSignupBox">
+        <h2 class="">Welcome!</h2>
+        <form #signupForm="ngForm" (ngSubmit)="addUser(signupForm)" class="lsb2">
+            <input type="text" placeholder="username" class="cosmetic" style="cursor: text;" [(ngModel)]="user.username"
+                name="username" #username="ngModel">
+            <input type="password" placeholder="password" class="cosmetic" style="cursor: text;"
+                [(ngModel)]="user.password" name="password" #password="ngModel">
+            <input type="password" placeholder="re-enter password" class="cosmetic" style="cursor: text;"
+                [(ngModel)]="user.repassword" name="repassword" #repassword="ngModel">
+            <button type="submit">Signup</button>
+            <a routerLink="/login" routerLinkActive="active" ariaCurrentWhenActive="page">Login</a>
+        </form>
+    </div>
+</div>

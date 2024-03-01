@@ -1,0 +1,18 @@
+<div class="lsb2 vh-100">
+    <div class="loginSignupBox">
+        <h2 class="">Welcome!</h2>
+        <form class="lsb2" #loginForm="ngForm" (ngSubmit)="userLogin(loginForm)">
+            <input type="text" placeholder="username" class="cosmetic" style="cursor: text;" [(ngModel)]="user.username"
+                name="username" #username="ngModel">
+            <input type="password" placeholder="password" class="cosmetic" style="cursor: text;"
+                [(ngModel)]="user.password" name="password" #password="ngModel">
+            <button type="submit">Submit</button>
+            <a routerLink="/signup" routerLinkActive="active" ariaCurrentWhenActive="page">Signup</a>
+        </form>
+    </div>
+    <div class="adminLogin">
+        <a routerLink="/adminlogin" routerLinkActive="active" ariaCurrentWhenActive="page"><Button
+                class="btn btn-primary">Admin login</Button></a>
+    </div>
+</div>
+<router-outlet></router-outlet>

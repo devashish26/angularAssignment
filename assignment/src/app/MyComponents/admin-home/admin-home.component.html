@@ -1,0 +1,21 @@
+<div class="container-fluid d-flex flex-column align-items-center ">
+    <h2 class="my-2 mb-5">Welcome admin</h2>
+    <h3>List of all users</h3>
+    <p>Total number of users with a subscription:<b>{{" "+countValue}}</b> </p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">username</th>
+                <th scope="col">activation</th>
+                <th scope="col">validity</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let usr of userList">
+                <td>{{usr.username}}</td>
+                <td>{{usr.activation}}</td>
+                <td>{{usr.validity}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,13 @@
+<div class="lsb2 vh-100">
+    <div class="loginSignupBox">
+        <h2 class="">Admin Login</h2>
+        <form #adminLoginForm="ngForm" (ngSubmit)="adminLogin(adminLoginForm)" class="lsb2">
+            <input type="text" placeholder="username" class="cosmetic" style="cursor: text;" #username="ngModel"
+                name="username" [(ngModel)]="admin.username">
+            <input type="password" placeholder="password" class="cosmetic" style="cursor: text;" #password="ngModel"
+                name="password" [(ngModel)]="admin.password">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+<router-outlet></router-outlet>

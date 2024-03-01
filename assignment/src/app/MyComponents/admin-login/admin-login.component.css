@@ -1,0 +1,18 @@
+.loginSignupBox{
+    height: 300px;
+    width: 400px;
+    background-color: aqua;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lsb2{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
